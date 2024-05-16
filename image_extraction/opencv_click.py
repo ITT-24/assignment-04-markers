@@ -12,7 +12,8 @@ def mouse_callback(event, x, y, flags, param):
         img = cv2.circle(img, (x, y), 5, (255, 0, 0), -1)
         cv2.imshow(WINDOW_NAME, img)
 
-cv2.setMouseCallback(WINDOW_NAME, mouse_callback)
 cv2.imshow(WINDOW_NAME, img)
+
+cv2.setMouseCallback(WINDOW_NAME, mouse_callback)
 
 cv2.waitKey(0)
